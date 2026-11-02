@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.brokie.trytofindme.mixin.client",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "CloudRendererMixin",
+    "CoordinateTextMixin",
+    "BlockStateOffsetMixin",
+    "BlockModelRotationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

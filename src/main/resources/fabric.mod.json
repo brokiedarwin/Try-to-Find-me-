@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "trytofindme",
+  "version": "${version}",
+  "name": "TrytoFindme",
+  "description": "This Mod Was Maked For Hiding your Position.",
+  "authors": ["BrokieDarwin"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/trytofindme/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.brokie.trytofindme.client.TrytofindmeDataGenerator"
+    ],
+    "client": [
+      "org.brokie.trytofindme.client.TrytofindmeClient"
+    ],
+    "main": [
+      "org.brokie.trytofindme.Trytofindme"
+    ]
+  },
+  "mixins": [
+    "trytofindme.mixins.json",
+    {
+      "config": "trytofindme.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
